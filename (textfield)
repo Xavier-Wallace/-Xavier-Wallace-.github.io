@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Xavier Wallace">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSci 3054 Web Programming Portfolio</title>
+</head>
+<body>
+
+    <header>
+        <h1>CSci 3054 Web Programming</h1>
+        <p>Created by Xavier Wallace</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Projects and Activities</h2>
+            <p>
+                This page serves as the landing page for my CSci 3054 Web Programming
+                course work. Links to projects and relevant activities will be added
+                here throughout the semester.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Xavier Wallace | CSci 3054 Web Programming</p>
+    </footer>
+
+</body>
+</html>
