@@ -53,6 +53,7 @@ img {
     max-width: 600px;
     display: block;
     margin: auto;
+    border-radius: 10px;
 }
 
 form {
@@ -61,7 +62,8 @@ form {
 }
 
 input,
-textarea {
+textarea,
+select {
     margin-bottom: 15px;
     padding: 10px;
 }
@@ -71,6 +73,12 @@ button {
     background-color: purple;
     color: white;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 footer {
@@ -86,4 +94,274 @@ footer {
         grid-template-columns: 1fr;
     }
 
+}
+
+/* =====================================
+   ALPHA PHI ALPHA
+===================================== */
+
+body.alpha {
+    background-color: #000000;
+    color: #FFD700;
+}
+
+body.alpha header,
+body.alpha footer {
+    background-color: #000000;
+    color: #FFD700;
+}
+
+body.alpha section {
+    background-color: #1a1a1a;
+}
+
+body.alpha h1,
+body.alpha h2 {
+    color: #FFD700;
+}
+
+body.alpha .choice-grid a,
+body.alpha button {
+    background-color: #FFD700;
+    color: #000000;
+}
+
+/* =====================================
+   ALPHA KAPPA ALPHA
+===================================== */
+
+body.aka {
+    background-color: #F8D7DA;
+    color: #006747;
+}
+
+body.aka header,
+body.aka footer {
+    background-color: #006747;
+    color: white;
+}
+
+body.aka section {
+    background-color: white;
+}
+
+body.aka h1,
+body.aka h2 {
+    color: #006747;
+}
+
+body.aka .choice-grid a,
+body.aka button {
+    background-color: #F8D7DA;
+    color: #006747;
+}
+
+/* =====================================
+   KAPPA ALPHA PSI
+===================================== */
+
+body.kappa {
+    background-color: #8B0000;
+    color: white;
+}
+
+body.kappa header,
+body.kappa footer {
+    background-color: #5A0000;
+    color: white;
+}
+
+body.kappa section {
+    background-color: #A52A2A;
+}
+
+body.kappa h1,
+body.kappa h2 {
+    color: white;
+}
+
+body.kappa .choice-grid a,
+body.kappa button {
+    background-color: white;
+    color: #8B0000;
+}
+
+/* =====================================
+   OMEGA PSI PHI
+===================================== */
+
+body.omega {
+    background-color: #4B0082;
+    color: #FFD700;
+}
+
+body.omega header,
+body.omega footer {
+    background-color: #2E004F;
+    color: #FFD700;
+}
+
+body.omega section {
+    background-color: #5D2A8A;
+}
+
+body.omega h1,
+body.omega h2 {
+    color: #FFD700;
+}
+
+body.omega .choice-grid a,
+body.omega button {
+    background-color: #FFD700;
+    color: #4B0082;
+}
+
+/* =====================================
+   DELTA SIGMA THETA
+===================================== */
+
+body.dst {
+    background-color: white;
+    color: #C8102E;
+}
+
+body.dst header,
+body.dst footer {
+    background-color: #C8102E;
+    color: white;
+}
+
+body.dst section {
+    background-color: #FFF5F5;
+}
+
+body.dst h1,
+body.dst h2 {
+    color: #C8102E;
+}
+
+body.dst .choice-grid a,
+body.dst button {
+    background-color: #C8102E;
+    color: white;
+}
+
+/* =====================================
+   PHI BETA SIGMA
+===================================== */
+
+body.pbs {
+    background-color: white;
+    color: #003DA5;
+}
+
+body.pbs header,
+body.pbs footer {
+    background-color: #003DA5;
+    color: white;
+}
+
+body.pbs section {
+    background-color: #F5F9FF;
+}
+
+body.pbs h1,
+body.pbs h2 {
+    color: #003DA5;
+}
+
+body.pbs .choice-grid a,
+body.pbs button {
+    background-color: #003DA5;
+    color: white;
+}
+
+/* =====================================
+   ZETA PHI BETA
+===================================== */
+
+body.zeta {
+    background-color: white;
+    color: #0057B8;
+}
+
+body.zeta header,
+body.zeta footer {
+    background-color: #0057B8;
+    color: white;
+}
+
+body.zeta section {
+    background-color: #F0F7FF;
+}
+
+body.zeta h1,
+body.zeta h2 {
+    color: #0057B8;
+}
+
+body.zeta .choice-grid a,
+body.zeta button {
+    background-color: #0057B8;
+    color: white;
+}
+
+/* =====================================
+   SIGMA GAMMA RHO
+===================================== */
+
+body.sgrho {
+    background-color: #FFD700;
+    color: #000080;
+}
+
+body.sgrho header,
+body.sgrho footer {
+    background-color: #000080;
+    color: #FFD700;
+}
+
+body.sgrho section {
+    background-color: #FFF5B8;
+}
+
+body.sgrho h1,
+body.sgrho h2 {
+    color: #000080;
+}
+
+body.sgrho .choice-grid a,
+body.sgrho button {
+    background-color: #000080;
+    color: #FFD700;
+}
+
+/* =====================================
+   IOTA PHI THETA
+===================================== */
+
+body.iota {
+    background-color: #F5E6A9;
+    color: #8B4513;
+}
+
+body.iota header,
+body.iota footer {
+    background-color: #8B4513;
+    color: #F5E6A9;
+}
+
+body.iota section {
+    background-color: #FFF8DC;
+}
+
+body.iota h1,
+body.iota h2 {
+    color: #8B4513;
+}
+
+body.iota .choice-grid a,
+body.iota button {
+    background-color: #8B4513;
+    color: #F5E6A9;
 }
