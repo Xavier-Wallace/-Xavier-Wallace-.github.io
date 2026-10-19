@@ -1,0 +1,240 @@
+```css
+/* General page styling */
+:root {
+    --primary-color: #4b1c71;
+    --secondary-color: #d4af37;
+    --background-color: #f7f5fa;
+    --text-color: #222222;
+    --card-background: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--secondary-color);
+    color: #222222;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: var(--card-background);
+    margin-bottom: 25px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+h3 {
+    color: var(--primary-color);
+}
+
+a {
+    color: #4b1c71;
+}
+
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid var(--secondary-color);
+    outline-offset: 3px;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* Main call-to-action button */
+.main-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main-button:hover,
+.main-button:focus {
+    background-color: #35134f;
+}
+
+/* Interactive choices */
+.choice-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.choice-button,
+button {
+    font: inherit;
+    cursor: pointer;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.choice-button:hover,
+button:hover {
+    background-color: #35134f;
+}
+
+.choice-button[aria-pressed="true"] {
+    background-color: var(--secondary-color);
+    color: #222222;
+}
+
+/* Contact form */
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 11px;
+    font: inherit;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    background-color: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#formMessage {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Footer */
+footer {
+    background-color: #261438;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Hidden sections used by the interactive page */
+[hidden] {
+    display: none !important;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    header {
+        padding: 24px 14px;
+    }
+
+    main {
+        width: 94%;
+        margin: 18px auto;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .choice-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 8px;
+    }
+}
+```
