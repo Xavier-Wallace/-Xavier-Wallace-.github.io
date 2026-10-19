@@ -1,0 +1,88 @@
+```json
+{
+  "founding": {
+    "title": "Founding and Early History",
+    "subtopics": [
+      {
+        "title": "Alpha Phi Alpha",
+        "description": "Alpha Phi Alpha Fraternity, Inc. was founded on December 4, 1906, at Cornell University in Ithaca, New York. It was the first intercollegiate Greek-letter fraternity established for African American men."
+      },
+      {
+        "title": "Alpha Kappa Alpha",
+        "description": "Alpha Kappa Alpha Sorority, Inc. was founded on January 15, 1908, at Howard University in Washington, D.C. It became the first Greek-letter sorority established by African American college women."
+      },
+      {
+        "title": "Kappa Alpha Psi",
+        "description": "Kappa Alpha Psi Fraternity, Inc. was founded on January 5, 1911, at Indiana University in Bloomington, Indiana. Its history includes a commitment to achievement and brotherhood."
+      },
+      {
+        "title": "Omega Psi Phi",
+        "description": "Omega Psi Phi Fraternity, Inc. was founded on November 17, 1911, at Howard University in Washington, D.C. Its founding principles include manhood, scholarship, perseverance, and uplift."
+      }
+    ]
+  },
+  "expansion": {
+    "title": "Growth and Expansion",
+    "subtopics": [
+      {
+        "title": "Delta Sigma Theta",
+        "description": "Delta Sigma Theta Sorority, Inc. was founded on January 13, 1913, at Howard University. Its members participated in the 1913 Women's Suffrage Procession in Washington, D.C."
+      },
+      {
+        "title": "Phi Beta Sigma",
+        "description": "Phi Beta Sigma Fraternity, Inc. was founded on January 9, 1914, at Howard University. Its founders emphasized service, scholarship, and brotherhood."
+      },
+      {
+        "title": "Zeta Phi Beta",
+        "description": "Zeta Phi Beta Sorority, Inc. was founded on January 16, 1920, at Howard University. The organization emphasizes scholarship, service, sisterhood, and finer womanhood."
+      },
+      {
+        "title": "Sigma Gamma Rho",
+        "description": "Sigma Gamma Rho Sorority, Inc. was founded on November 12, 1922, at Butler University in Indianapolis, Indiana. It was founded by seven educators."
+      }
+    ]
+  },
+  "service": {
+    "title": "Service and Civil Rights",
+    "subtopics": [
+      {
+        "title": "Civil Rights Advocacy",
+        "description": "Members of Divine Nine organizations have participated in civil rights advocacy, voter engagement, and efforts to address racial inequality. Activities and contributions differ by organization and historical period."
+      },
+      {
+        "title": "Education and Scholarships",
+        "description": "Scholarship and education are important parts of the work of many Divine Nine organizations. Programs may include scholarships, mentoring, academic support, and educational outreach."
+      },
+      {
+        "title": "Community Service",
+        "description": "Community service is a major part of the identity of the Divine Nine. Chapters may organize food drives, health initiatives, neighborhood projects, and other volunteer activities."
+      },
+      {
+        "title": "Civic Engagement",
+        "description": "Divine Nine organizations and their members have supported civic participation through activities such as voter education, registration efforts, and public service initiatives."
+      }
+    ]
+  },
+  "legacy": {
+    "title": "Modern Legacy",
+    "subtopics": [
+      {
+        "title": "Iota Phi Theta",
+        "description": "Iota Phi Theta Fraternity, Inc. was founded on September 19, 1963, at Morgan State College in Baltimore, Maryland. Its founding took place during the civil rights era."
+      },
+      {
+        "title": "Leadership Development",
+        "description": "Divine Nine organizations offer members opportunities to develop leadership skills through chapter roles, campus involvement, mentoring, and community projects."
+      },
+      {
+        "title": "Lifelong Brotherhood and Sisterhood",
+        "description": "The Divine Nine provides a structure for lifelong connections among members. Brotherhood and sisterhood can continue through alumni chapters, reunions, and community involvement."
+      },
+      {
+        "title": "Continuing Community Impact",
+        "description": "Today, Divine Nine members continue to contribute to education, health awareness, mentoring, philanthropy, and community development through local and national initiatives."
+      }
+    ]
+  }
+}
+```
