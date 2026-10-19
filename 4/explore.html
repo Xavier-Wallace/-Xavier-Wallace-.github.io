@@ -1,0 +1,70 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Xavier Wallace">
+    <meta name="description" content="Explore the history and impact of the Divine Nine.">
+    <meta name="keywords" content="Divine Nine, NPHC, Greek organizations, history">
+    <title>Explore the Divine Nine</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/explore.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Explore the Divine Nine</h1>
+        <p>Choose a topic and discover its connection to the Divine Nine.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Step 1: Choose a Topic</h2>
+            <p>Select one of the topics below to continue.</p>
+
+            <div id="topicChoices" class="choice-grid">
+                <button type="button" class="choice-button" data-topic="founding">
+                    Founding and Early History
+                </button>
+
+                <button type="button" class="choice-button" data-topic="expansion">
+                    Growth and Expansion
+                </button>
+
+                <button type="button" class="choice-button" data-topic="service">
+                    Service and Civil Rights
+                </button>
+
+                <button type="button" class="choice-button" data-topic="legacy">
+                    Modern Legacy
+                </button>
+            </div>
+        </section>
+
+        <section id="stepTwo" hidden>
+            <h2>Step 2: Choose a Subtopic</h2>
+            <p id="selectedTopic"></p>
+            <div id="subtopicChoices" class="choice-grid"></div>
+            <button type="button" id="backButton">Choose a Different Topic</button>
+        </section>
+
+        <section id="results" aria-live="polite" hidden>
+            <h2 id="resultTitle">Your Result</h2>
+            <p id="resultDescription"></p>
+            <button type="button" id="startOverButton">Start Over</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Xavier Wallace | CSci 3054 Web Programming</p>
+    </footer>
+</body>
+</html>
+```
