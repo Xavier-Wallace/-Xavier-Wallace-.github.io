@@ -237,4 +237,23 @@ footer p {
         padding: 8px;
     }
 }
-```
+```css
+.featured-image {
+    display: block;
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
