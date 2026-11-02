@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact the Divine Nine website team.">
+    <title>Contact Us | Divine Nine</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="js/contact.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Divine Nine</h1>
+
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="explore.html">Explore</a>
+            <a href="resources.html">Resources</a>
+            <a href="contact.html" aria-current="page">Contact Us</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-intro">
+            <h2>Contact Us</h2>
+            <p>
+                Have a question or want to learn more about the Divine Nine?
+                Send us a message using the form below.
+            </p>
+        </section>
+
+        <section class="contact-container">
+
+            <div id="loginRequired">
+                <h3>Login Required</h3>
+                <p>
+                    You must be logged in to submit a contact message.
+                </p>
+                <a href="login.html" class="button-link">Log In</a>
+            </div>
+
+            <form id="contactForm" hidden>
+
+                <h3>Send Us a Message</h3>
+
+                <p>
+                    Fill out all fields below. Your message will be
+                    securely submitted to our database.
+                </p>
+
+                <div class="form-group">
+                    <label for="contactName">Full Name</label>
+                    <input
+                        type="text"
+                        id="contactName"
+                        maxlength="100"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address</label>
+                    <input
+                        type="email"
+                        id="contactEmail"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input
+                        type="text"
+                        id="contactSubject"
+                        maxlength="150"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea
+                        id="contactMessage"
+                        rows="6"
+                        maxlength="3000"
+                        required
+                    ></textarea>
+                </div>
+
+                <button type="submit" id="submitButton">
+                    Submit Message
+                </button>
+
+                <p id="formStatus" role="status" aria-live="polite"></p>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Xavier Wallace | CSci 3054 Web Programming</p>
+    </footer>
+
+</body>
+</html>
 
