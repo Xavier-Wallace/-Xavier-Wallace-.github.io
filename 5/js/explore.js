@@ -1,61 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the nine historically Black Greek-letter organizations of the Divine Nine.">
-    <title>Explore | Divine Nine</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="js/explore.js"></script>
-</head>
-<body>
+import { db } from "./firebase.js";
 
-    <header>
-        <h1>Divine Nine</h1>
+import {
+    collection,
+    getDocs
+} from "https://www.gstatic.com/firebasejs/13.1.0/firebase-firestore.js";
 
-        <nav aria-label="Main navigation">
-            <a href="index.html">Home</a>
-            <a href="explore.html" aria-current="page">Explore</a>
-            <a href="resources.html">Resources</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </header>
+// Get HTML elements
+const organizationContainer =
+    document.getElementById("organizationContainer");
 
-    <main>
-        <section class="explore-intro">
-            <h2>Explore the Divine Nine</h2>
-            <p>
-                Discover the history, founding dates, and organizations
-                that make up the National Pan-Hellenic Council.
-            </p>
-        </section>
+const loadingMessage =
+    document.getElementById("loadingMessage");
 
-        <section class="organization-section">
-            <h2>Our Organizations</h2>
+const errorMessage =
+    document.getElementById("errorMessage");
 
-            <p id="loadingMessage" role="status" aria-live="polite">
-                Loading organizations from Firebase...
-            </p>
+const retryButton =
+    document.getElementById("retryButton");
 
-            <p id="errorMessage" role="alert" hidden></p>
+// Retrieve organizations from Firebase
+async function loadOrganizations() {
 
-            <button type="button" id="retryButton" hidden>
-                Try Again
-            </button>
+    loadingMessage.hidden = false;
+    loadingMessage.textContent = "Loading organizations from Firebase...";
 
-            <div
-                id="organizationContainer"
-                class="organization-grid"
-                aria-live="polite"
-            ></div>
-        </section>
-    </main>
+    errorMessage.hidden = true;
+    retryButton.hidden = true;
 
-    <footer>
-        <p>Xavier Wallace | CSci 3054 Web Programming</p>
-    </footer>
+    organizationContainer.replaceChildren();
 
-</body>
-</html>
+    try {
+
+        // Get all documents from the divineNine collection
+        const querySnapshot = await getDocs(
+            collection(db, "divineNine")
+        );
+
+        // Check whether any organizations were found
+        if (querySnapshot.empty) {
+            loadingMessage.textContent =
+                "No organizations were found in the database.";
+            return;
+        }
+
+        // Convert Firebase documents into an array
+        const organizations = [];
+
+        querySnapshot.forEach(function(document) {
+            organizations.push(document.data());
+        });
+
+        // Sort organizations alphabetically
+        organizations.sort(function(a, b) {
+            return a.name.localeCompare(b.name);
+        });
+
+        // Display each organization
+        organizations.forEach(function(org) {
+
+            const card = document.createElement("article");
+            card.className = "organization-card";
+
+            const name = document.createElement("h3");
+            name.textContent = org.name || "Organization";
+
+            const founded = document.createElement("p");
+            founded.textContent = "Founded: " + (org.founded || "Not available");
+
+            const nickname = document.createElement("p");
+            nickname.textContent = "Nickname: " + (org.nickname || "Not available");
+
+            const category = document.createElement("p");
+            category.textContent = "Category: " + (org.category || "Not available");
+
+            const description = document.createElement("p");
+            description.textContent =
+                org.description || "No description available.";
+
+            card.appendChild(name);
+            card.appendChild(founded);
+            card.appendChild(nickname);
+            card.appendChild(category);
+            card.appendChild(description);
+
+            organizationContainer.appendChild(card);
+        });
+
+        loadingMessage.hidden = true;
+
+    } catch (error) {
+
+        loadingMessage.hidden = true;
+
+        errorMessage.textContent =
+            "Unable to load organizations: " + error.message;
+
+        errorMessage.hidden = false;
+        retryButton.hidden = false;
+
+    }
+}
+
+// Allow users to retry if loading fails
+retryButton.addEventListener("click", loadOrganizations);
+
+// Load organizations when the page opens
+loadOrganizations();
 
